@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vertical Image Icon Buttons</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f5f5f5;
+    }
+
+    .image-container {
+      position: relative;
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .image-container img.main {
+      width: 100%;
+      display: block;
+      border-radius: 8px;
+    }
+
+    .button-group {
+      position: absolute;
+      top: 73%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      align-items: center;
+    }
+
+    .icon-btn {
+      background-color: #01111011;
+      border: none;
+      padding: 12px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .icon-btn:hover {
+      background-color: #333;
+    }
+
+    .icon-btn img {
+      width: 70px;
+      height: 70px;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="image-container">
+    <img src="https://i.imgur.com/hcHdYjS.jpeg" alt="Aura Studio" class="main"/>
+    <div class="button-group">
+      <a href="https://maps.app.goo.gl/oUm1LdfPeWMmMi9H6" target="_blank">
+  <button class="icon-btn" href="gg"><img src="https://cdn-icons-png.freepik.com/512/535/535239.png" alt="Icon 1" /></button>
+</a>
+      <a href="https://www.instagram.com/aurastudiodz" target="_blank">
+      <button class="icon-btn"><img src="https://cdn-icons-png.freepik.com/512/15047/15047558.png" alt="Icon 2" /></button>
+</a>
+      <a href="tel:+213 540268480"target="_blank">
+      <button class="icon-btn"><img src="https://cdn-icons-png.freepik.com/512/10944/10944654.png" alt="Icon 3" /></button>
+</a>
+    </div>
+  </div>
+
+</body>
+</html>
